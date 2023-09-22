@@ -1,0 +1,13 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list{
+  list-style: none;
+  display: flex;
+}
+
+.header__list_element{
+  margin-left: 10px;
+}
