@@ -1,0 +1,38 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.heading__name {
+  font-family: Arial;
+  font-size: 28px;
+  font-style: normal;
+}
+
+.heading__title{
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.heading__subtitle{
+  font-family: Arial;
+  font-size: 25px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.heading__text{
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.heading__info{
+  display: flex;
+  margin: auto;
+}
