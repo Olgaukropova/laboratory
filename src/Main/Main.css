@@ -35,4 +35,54 @@
 .heading__info{
   display: flex;
   margin: auto;
+  align-items: center;
+}
+
+.heading__info_name{
+  max-width: 160px;
+}
+
+.heading__link{
+  text-decoration: none;
+  color: white;
+}
+
+.services{
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  grid-template-rows:repeat(3, 1fr);
+  margin: auto;
+  max-width: 900px;
+  gap: 20px;
+}
+
+.services__element{
+  background-color: #ccc;
+  border-radius: 30px;
+}
+
+.services__elemen-diagnostics{
+  grid-column: 1 / 1;
+   grid-row: 1 / 1;
+}
+
+.services__elemen-problem{
+  grid-column: 2 / 2;
+  grid-row:2 / 2;
+}
+
+.services__elemen-report{
+  grid-column: 1 / 1;
+  grid-row:3 / 3;
+}
+
+.trials{
+  margin: auto;
+  max-width: 900px;
+}
+
+.trials__list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
