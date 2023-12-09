@@ -4,13 +4,12 @@ function Header() {
   return (
     <section className="header">
       <p className="header__name">Электросетьстрой</p>
-      <nav>
+      <nav >
         <ul className='header__list'>
           <li className='header__list_element'>О компании</li>
           <li className='header__list_element'>Услуги</li>
           <li className='header__list_element'>Испытания</li>
           <li className='header__list_element'>Отчеты</li>
-          <li className='header__list_element'>Цены</li>
           <li className='header__list_element'>Контакты</li>
         </ul>
       </nav>

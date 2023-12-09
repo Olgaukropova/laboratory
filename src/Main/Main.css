@@ -1,88 +1,139 @@
 .heading {
   display: flex;
   flex-direction: column;
-  background-color: gray;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  align-items: flex-start;
+  /* background-color: gray; */
+  background-image: url(../images/silhouette-of-high-voltage-power-line-vector-1073683.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: black;
+  
+  color:  #FFF;;
 }
 
 .heading__name {
+  margin: 0;
   font-family: Arial;
   font-size: 28px;
   font-style: normal;
-}
+  margin-top: 74px;
+  margin-left: 555px;
+ }
 
-.heading__title{
+.heading__title {
+  margin: 0;
   font-family: Arial;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   text-transform: uppercase;
+  margin-top: 45px;
+  margin-left: 75px;
 }
 
-.heading__subtitle{
+.heading__subtitle {
+  margin: 0;
   font-family: Arial;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   text-transform: uppercase;
+  margin-left: 374px;
 }
 
-.heading__text{
+.heading__text {
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
+  margin-left: 520px;
 }
 
-.heading__info{
+.heading__info {
   display: flex;
-  margin: auto;
+  margin-left: 630px;
   align-items: center;
 }
 
-.heading__info_name{
+.heading__info_name {
   max-width: 160px;
+  
 }
 
-.heading__link{
+.heading__link {
   text-decoration: none;
   color: white;
 }
 
-.services{
+.services {
   display: grid;
-  grid-template-columns:  repeat(2, 1fr);
-  grid-template-rows:repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   margin: auto;
   max-width: 900px;
   gap: 20px;
 }
 
-.services__element{
-  background-color: #ccc;
-  border-radius: 30px;
+.services__element {
+  background-color: #FFB342;
+  border-radius: 5px;
+  border: 5px solid #1C2752;
 }
 
-.services__elemen-diagnostics{
+.services__elemen-diagnostics {
   grid-column: 1 / 1;
-   grid-row: 1 / 1;
+  grid-row: 1 / 1;
 }
 
-.services__elemen-problem{
+.services__elemen-problem {
   grid-column: 2 / 2;
-  grid-row:2 / 2;
+  grid-row: 2 / 2;
 }
 
-.services__elemen-report{
+.services__elemen-report {
   grid-column: 1 / 1;
-  grid-row:3 / 3;
+  grid-row: 3 / 3;
 }
 
-.trials{
+.trials {
   margin: auto;
   max-width: 900px;
 }
 
-.trials__list{
+.trials__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.documents__images {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.documents__image {
+  margin-bottom: 15px;
+  width: 30%;
+}
+
+.documents__list {
+  display: flex;
+  background-color: #FFB342;
+}
+
+.documents__list-element {
+  
+  list-style: none;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.documents__list-element-number{
+  background-color: #1C2752;
+    color: #FFB342;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
 }

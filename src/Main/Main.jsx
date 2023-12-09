@@ -1,4 +1,9 @@
-import './Main.css'
+import './Main.css';
+import license from '../images/2023-10-20_19-41-17.png';
+import license2 from '../images/2023-10-20_19-41-50.png';
+import license3 from '../images/2023-10-20_19-42-10.png';
+// import { YMaps, Map} from '@pbe/react-yandex-maps';
+
 function Main() {
   return (
     <>
@@ -9,16 +14,17 @@ function Main() {
         <h3 className="heading__text">Работаем по г.Рязани и Рязанской области</h3>
         <div className="heading__info">
           <div className='heading__info_name'>
-            <p >Технический отдел: ФИО</p>
+            <p >Технический отдел: Ильин Андрей Игоревич</p>
           </div>
-          <p className="">8 900 000 00 00</p>
+          <p className="">8 910 643 96 78</p>
         </div>
-        <a className='heading__link' href="">Контактная информация</a>
       </section>
+
       <section className="photo">
         <img src="" alt="" />
         <img src="" alt="" />
       </section>
+
       <section className='services'>
         <div className='services__element services__elemen-diagnostics'>
           <h2>Диагностика электрооборудования</h2>
@@ -46,6 +52,7 @@ function Main() {
             требованию.</p>
         </div>
       </section>
+
       <section className='trials'>
         <h2>Наша электроизмерительная лаборатория
           проводит следующие виды испытаний и измерений:</h2>
@@ -68,6 +75,61 @@ function Main() {
           <li>Оценка качества трансформаторного масла.</li>
         </ol>
       </section>
+
+      <section className='documents'>
+        <p>Технический отчёт по испытаниям электрических сетей и заземляющих устройств включает в себя следующие документы:</p>
+        <ul className='documents__list'>
+          <li className='documents__list-element'>
+            <p className='documents__list-element-number'>1</p>
+            <p>Копию подтверждения регистрации электроизмерительной лаборатории.</p>
+          </li>
+          <li className='documents__list-element'>
+            <p className='documents__list-element-number'>2</p>
+            <p>Пояснительную записку к протоколам испытаний и измерений.</p>
+          </li>
+          <li className='documents__list-element'>
+            <p className='documents__list-element-number'>3</p>
+            <p>Акт визуального осмотра электроустановки на соответствие нормам и правилам.</p>
+          </li>
+          <li className='documents__list-element'>
+            <p className='documents__list-element-number'>4</p>
+            <p>Протоколы проведённых испытаний и измерений.</p>
+          </li>
+          <li className='documents__list-element'>
+            <p className='documents__list-element-number'>5</p>
+            <p>Заключение.</p>
+          </li>
+        </ul>
+        <div className='documents__images'>
+          <img src={license} alt="лицензия" className='documents__image' />
+          <img src={license2} alt="лицензия" className='documents__image' />
+          <img src={license3} alt="лицензия" className='documents__image' />
+        </div>
+      </section>
+
+
+
+      <section className='address'>
+        <h2 className='address__'>ЭЛЕКТРОСЕТЬСТРОЙ</h2>
+        <h3>г.Рязань, ул. Прижелезнодорожная, 6А</h3>
+        const App = ()  (
+        {/* <YMaps>
+    <div>My awesome application with maps!</div>
+    <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
+  </YMaps> */}
+        {/* <YMaps>
+          <Map width={'100%'} height={800} defaultState={{
+            center: [53.21, 38.17],
+            zoom: 3,
+            controls: ['zoomControl', 'fullscreenControl']
+          }}
+          />
+        
+      </YMaps> */}
+      );
+
+
+    </section >
     </>
   );
 }

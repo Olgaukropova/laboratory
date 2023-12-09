@@ -1,11 +1,14 @@
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__list{
   list-style: none;
   display: flex;
+  background-color: #FFB342;
+  padding: 29px;
 }
 
 .header__list_element{
