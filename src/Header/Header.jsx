@@ -10,7 +10,7 @@ function Header() {
           <li className='header__list_element'>Услуги</li>
           <li className='header__list_element'>Испытания</li>
           <li className='header__list_element'>Отчеты</li>
-          <li className='header__list_element'>Контакты</li>
+          <li className='header__list_element header__list_element-contacts'>Контакты</li>
         </ul>
       </nav>
     </section>

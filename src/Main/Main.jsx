@@ -20,10 +20,10 @@ function Main() {
         </div>
       </section>
 
-      <section className="photo">
+      {/* <section className="photo">
         <img src="" alt="" />
         <img src="" alt="" />
-      </section>
+      </section> */}
 
       <section className='services'>
         <div className='services__element services__elemen-diagnostics'>
@@ -54,9 +54,9 @@ function Main() {
       </section>
 
       <section className='trials'>
-        <h2>Наша электроизмерительная лаборатория
+        <h2 className='trials__title'>Наша электроизмерительная лаборатория
           проводит следующие виды испытаний и измерений:</h2>
-        <ol className='trials__list'>
+        <ul className='trials__list'>
           <li> Проверка соответсвия смонтированной электроустановки требованиям нормативной и проектной документации (визуальный осмотр электроустановок).</li>
           <li> Измерение сопротивления заземляющих устройств.</li>
           <li>Измерение сопротивления цепи между заземлителями и заземляемыми элементами.</li>
@@ -73,11 +73,11 @@ function Main() {
           <li>Испытание силовых конденсаторов.</li>
           <li>Испытание изоляторов, линейной арматуры и других элементов линий электропередачи  и подстанций, напряжение до 110кВт.</li>
           <li>Оценка качества трансформаторного масла.</li>
-        </ol>
+        </ul>
       </section>
 
       <section className='documents'>
-        <p>Технический отчёт по испытаниям электрических сетей и заземляющих устройств включает в себя следующие документы:</p>
+        <p className='documents__heading'>технический отчёт по испытаниям электрических сетей и заземляющих устройств включает в себя следующие документы:</p>
         <ul className='documents__list'>
           <li className='documents__list-element'>
             <p className='documents__list-element-number'>1</p>
@@ -100,36 +100,22 @@ function Main() {
             <p>Заключение.</p>
           </li>
         </ul>
-        <div className='documents__images'>
-          <img src={license} alt="лицензия" className='documents__image' />
-          <img src={license2} alt="лицензия" className='documents__image' />
-          <img src={license3} alt="лицензия" className='documents__image' />
-        </div>
-      </section>
 
+      </section>
+      <section className='certificate'>
+        <img src={license} alt="лицензия" className='certificate__image' />
+        <img src={license2} alt="лицензия" className='certificate__image' />
+        <img src={license3} alt="лицензия" className='certificate__image' />
+      </section>
 
 
       <section className='address'>
         <h2 className='address__'>ЭЛЕКТРОСЕТЬСТРОЙ</h2>
         <h3>г.Рязань, ул. Прижелезнодорожная, 6А</h3>
-        const App = ()  (
-        {/* <YMaps>
-    <div>My awesome application with maps!</div>
-    <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
-  </YMaps> */}
-        {/* <YMaps>
-          <Map width={'100%'} height={800} defaultState={{
-            center: [53.21, 38.17],
-            zoom: 3,
-            controls: ['zoomControl', 'fullscreenControl']
-          }}
-          />
-        
-      </YMaps> */}
-      );
+       
 
 
-    </section >
+      </section >
     </>
   );
 }

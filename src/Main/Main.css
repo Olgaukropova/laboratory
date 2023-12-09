@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: flex-start;
   /* background-color: gray; */
-  background-image: url(../images/silhouette-of-high-voltage-power-line-vector-1073683.jpg);
+  background-image: url(../images/es-transmission-tower.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
   background-size: contain;
-  background-color: black;
-  
-  color:  #FFF;;
+  background-color: #181d34;
+
+  color: #FFF;
+  ;
 }
 
 .heading__name {
@@ -19,7 +20,7 @@
   font-style: normal;
   margin-top: 74px;
   margin-left: 555px;
- }
+}
 
 .heading__title {
   margin: 0;
@@ -28,7 +29,7 @@
   font-style: normal;
   text-transform: uppercase;
   margin-top: 45px;
-  margin-left: 75px;
+  margin-left: 430px;
 }
 
 .heading__subtitle {
@@ -37,25 +38,25 @@
   font-size: 20px;
   font-style: normal;
   text-transform: uppercase;
-  margin-left: 374px;
+  margin-left: 504px;
 }
 
 .heading__text {
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
-  margin-left: 520px;
+  margin-left: 554px;
 }
 
 .heading__info {
   display: flex;
-  margin-left: 630px;
+  margin-left: 616px;
   align-items: center;
 }
 
 .heading__info_name {
   max-width: 160px;
-  
+
 }
 
 .heading__link {
@@ -70,6 +71,8 @@
   margin: auto;
   max-width: 900px;
   gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .services__element {
@@ -95,33 +98,69 @@
 
 .trials {
   margin: auto;
-  max-width: 900px;
+  /* max-width: 900px; */
+  display: flex;
+  background-color: #181d34;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 20px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: flex-start;
+}
+
+.trials__title {
+  margin: 0;
+  color: #FFB342;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
 }
 
 .trials__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: #FFF;
+  font-size: 23px;
+  list-style: none;
+  list-style-image: url(../images/IMAGE.svg);
+  margin-bottom: 80px;
 }
 
-.documents__images {
+.certificate {
   width: 100%;
   margin: auto;
   display: flex;
 }
 
-.documents__image {
+.certificate__image {
   margin-bottom: 15px;
   width: 30%;
 }
 
-.documents__list {
-  display: flex;
+.documents {
   background-color: #FFB342;
 }
 
+.documents__heading {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.documents__list {
+  display: flex;
+margin: 0;
+padding-bottom: 60px;
+}
+
 .documents__list-element {
-  
+
   list-style: none;
   width: 250px;
   display: flex;
@@ -129,11 +168,11 @@
   align-items: center;
 }
 
-.documents__list-element-number{
+.documents__list-element-number {
   background-color: #1C2752;
-    color: #FFB342;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 35px;
+  color: #FFB342;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
 }
