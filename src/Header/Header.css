@@ -2,9 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #F4F4F4;
+}
+
+.header__name {
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .header__list {
+  margin: 0;
   list-style: none;
   display: flex;
   background-color: #FFB342;
@@ -16,10 +27,13 @@
 .header__list_element {
   margin-left: 15px;
   margin-right: 15px;
+  text-decoration: none;
+  color: #1C2752;
 }
 
 .header__list_element-contacts {
   background-color: #1C2752;
   padding: 20px;
-  color: white;
+  color: #fff;
+  text-decoration: none;
 }

@@ -1,4 +1,6 @@
-import './Header.css'
+import './Header.css';
+// import { Link } from 'react-router-dom';
+
 
 function Header() {
   return (
@@ -6,11 +8,22 @@ function Header() {
       <p className="header__name">Электросетьстрой</p>
       <nav >
         <ul className='header__list'>
-          <li className='header__list_element'>О компании</li>
-          <li className='header__list_element'>Услуги</li>
-          <li className='header__list_element'>Испытания</li>
-          <li className='header__list_element'>Отчеты</li>
-          <li className='header__list_element header__list_element-contacts'>Контакты</li>
+          <li className='header__list_element'>
+            <a href="#heading" className='header__list_element'>О компании</a>
+
+          </li>
+          <li className='header__list_element'>
+            <a href="#services" className='header__list_element'>Услуги</a>
+          </li>
+          <li className='header__list_element'>
+            <a href="#trials" className='header__list_element'>Испытания</a>
+          </li>
+          <li className='header__list_element'>
+            <a href="#documents" className='header__list_element'>Отчеты</a>
+          </li>
+          <li className='header__list_element header__list_element-contacts'>
+            <a href="#contacts" className='header__list_element-contacts'>Контакты</a>
+          </li>
         </ul>
       </nav>
     </section>

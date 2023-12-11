@@ -8,9 +8,10 @@
   background-position: left;
   background-size: contain;
   background-color: #181d34;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #FFF;
-  ;
+
 }
 
 .heading__name {
@@ -18,7 +19,6 @@
   font-family: Arial;
   font-size: 28px;
   font-style: normal;
-  margin-top: 74px;
   margin-left: 555px;
 }
 
@@ -42,22 +42,14 @@
 }
 
 .heading__text {
+  margin: 0;
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
   margin-left: 554px;
 }
 
-.heading__info {
-  display: flex;
-  margin-left: 616px;
-  align-items: center;
-}
 
-.heading__info_name {
-  max-width: 160px;
-
-}
 
 .heading__link {
   text-decoration: none;
@@ -65,14 +57,19 @@
 }
 
 .services {
+  background-color: #F4F4F4;
+  /* #c0c1c2 */
+}
+
+.services__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin: auto;
   max-width: 900px;
   gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .services__element {
@@ -132,6 +129,8 @@
   width: 100%;
   margin: auto;
   display: flex;
+  justify-content: center;
+ background-color: #F4F4F4;
 }
 
 .certificate__image {
@@ -155,8 +154,8 @@
 
 .documents__list {
   display: flex;
-margin: 0;
-padding-bottom: 60px;
+  margin: 0;
+  padding-bottom: 60px;
 }
 
 .documents__list-element {
@@ -175,4 +174,46 @@ padding-bottom: 60px;
   width: 60px;
   height: 60px;
   font-size: 35px;
+}
+
+.contacts{
+display: flex;
+background-color:#181d34;
+color: #FFF;
+align-items: center;
+}
+
+.contacts__info {
+ font-size: 18px;
+  
+  align-items: center;
+}
+
+
+.contacts__name{
+  font-style: oblique;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  margin-left: 30px;
+}
+.contacts__img{
+border-radius: 50%;
+background-color: #FFB342;
+width: 28px;
+height: 28px;
+padding: 10px;
+margin-right: 10px;
+}
+
+.contacts__block{
+  display: flex;
+align-items: center;
+margin-right: 50px;
+}
+
+.contacts__blocks{
+  margin-left: 80px;
+  display: flex;
 }

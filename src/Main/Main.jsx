@@ -3,21 +3,20 @@ import license from '../images/2023-10-20_19-41-17.png';
 import license2 from '../images/2023-10-20_19-41-50.png';
 import license3 from '../images/2023-10-20_19-42-10.png';
 // import { YMaps, Map} from '@pbe/react-yandex-maps';
+import phone from '../images/IMAGE (1).svg';
+import mail from '../images/IMAGE4.svg';
+import location from '../images/IMAGE (2).svg';
+
 
 function Main() {
   return (
     <>
-      <section className="heading">
+      <section className="heading" id='heading'>
         <h2 className='heading__name'>ООО "Электросетьстрой"</h2>
         <h1 className='heading__title'>Электроизмерительная лаборатория</h1>
         <h2 className='heading__subtitle'>Измерения и испытания в элетроустановках</h2>
         <h3 className="heading__text">Работаем по г.Рязани и Рязанской области</h3>
-        <div className="heading__info">
-          <div className='heading__info_name'>
-            <p >Технический отдел: Ильин Андрей Игоревич</p>
-          </div>
-          <p className="">8 910 643 96 78</p>
-        </div>
+
       </section>
 
       {/* <section className="photo">
@@ -25,35 +24,38 @@ function Main() {
         <img src="" alt="" />
       </section> */}
 
-      <section className='services'>
-        <div className='services__element services__elemen-diagnostics'>
-          <h2>Диагностика электрооборудования</h2>
-          <p>Передвижная электроизмерительная лаборатория с
-            переносным комплектом приборов (ЭТЛ) выполняет широкий спектр
-            работ по испытаниям и измерениям в электроустановках, наладке и
-            диагностике различного электрооборудования.</p>
+      <section className='services' id='services'>
+        <div className='services__container'>
+          <div className='services__element services__elemen-diagnostics'>
+            <h2>Диагностика электрооборудования</h2>
+            <p>Передвижная электроизмерительная лаборатория с
+              переносным комплектом приборов (ЭТЛ) выполняет широкий спектр
+              работ по испытаниям и измерениям в электроустановках, наладке и
+              диагностике различного электрооборудования.</p>
+          </div>
+          <div className='services__element services__elemen-problem'>
+            <h2>Определение неисправностей</h2>
+            <p>В процессе испытаний и измерений, специалисты ЭТЛ
+              выявляют пригодность электрооборудования и кабельных систем к
+              дальнейшей эксплуатации, определяют неисправности в
+              электроустановках и предупреждают о возможных последствиях.
+            </p>
+          </div>
+          <div className='services__element services__elemen-report'>
+            <h2>Составление отчёта</h2>
+            <p>По результатам измерений и испытаний,
+              специалистами ЭТЛ составляются соответствующие протоколы.
+              Документы формируются в технический отчёт, в котором отражается
+              техническое состояние и соответствие нормативным актам
+              электрооборудования и кабельных систем проверенных
+              электроустановок. Отчёт выдаётся заказчику для предъявления по
+              требованию.</p>
+          </div>
         </div>
-        <div className='services__element services__elemen-problem'>
-          <h2>Определение неисправностей</h2>
-          <p>В процессе испытаний и измерений, специалисты ЭТЛ
-            выявляют пригодность электрооборудования и кабельных систем к
-            дальнейшей эксплуатации, определяют неисправности в
-            электроустановках и предупреждают о возможных последствиях.
-          </p>
-        </div>
-        <div className='services__element services__elemen-report'>
-          <h2>Составление отчёта</h2>
-          <p>По результатам измерений и испытаний,
-            специалистами ЭТЛ составляются соответствующие протоколы.
-            Документы формируются в технический отчёт, в котором отражается
-            техническое состояние и соответствие нормативным актам
-            электрооборудования и кабельных систем проверенных
-            электроустановок. Отчёт выдаётся заказчику для предъявления по
-            требованию.</p>
-        </div>
+
       </section>
 
-      <section className='trials'>
+      <section className='trials' id='trials'>
         <h2 className='trials__title'>Наша электроизмерительная лаборатория
           проводит следующие виды испытаний и измерений:</h2>
         <ul className='trials__list'>
@@ -76,7 +78,7 @@ function Main() {
         </ul>
       </section>
 
-      <section className='documents'>
+      <section className='documents' id='documents'>
         <p className='documents__heading'>технический отчёт по испытаниям электрических сетей и заземляющих устройств включает в себя следующие документы:</p>
         <ul className='documents__list'>
           <li className='documents__list-element'>
@@ -109,10 +111,24 @@ function Main() {
       </section>
 
 
-      <section className='address'>
-        <h2 className='address__'>ЭЛЕКТРОСЕТЬСТРОЙ</h2>
-        <h3>г.Рязань, ул. Прижелезнодорожная, 6А</h3>
-       
+      <section className='contacts' id='contacts'>
+        <h2 className='contacts__name'>Электросетьстрой</h2>
+        <div className='contacts__blocks'>
+          <div className='contacts__block'>
+            <img src={location} alt="локация" className='contacts__img' />
+            <p className='contacts__info'>г.Рязань, <br></br> ул. Прижелезнодорожная,<br></br> 6А</p>
+
+          </div>
+          <div className='contacts__block'>
+            <img src={phone} alt="телефон" className='contacts__img' />
+            <p className='contacts__info'>8 910 643 96 78 <br></br>Андрей Игоревич</p>
+          </div>
+          <div className='contacts__block'>
+            <img src={mail} alt="почта" className='contacts__img' />
+            <p className='contacts__info'>setstroj@rambler.ru</p>
+          </div>
+        </div>
+
 
 
       </section >
