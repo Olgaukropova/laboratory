@@ -6,17 +6,17 @@ import license3 from '../images/2023-10-20_19-42-10.png';
 import phone from '../images/IMAGE (1).svg';
 import mail from '../images/IMAGE4.svg';
 import location from '../images/IMAGE (2).svg';
-
+// import tower from '../images/es-transmission-tower.jpg';
 
 function Main() {
   return (
     <>
       <section className="heading" id='heading'>
-        <h2 className='heading__name'>ООО "Электросетьстрой"</h2>
-        <h1 className='heading__title'>Электроизмерительная лаборатория</h1>
+        {/* <h2 className='heading__name'>ООО "Электросетьстрой"</h2> */}
+        <h1 className='heading__title'>Электроизмерительная <br></br>лаборатория</h1>
         <h2 className='heading__subtitle'>Измерения и испытания в элетроустановках</h2>
         <h3 className="heading__text">Работаем по г.Рязани и Рязанской области</h3>
-
+        {/* <img src={tower} alt="" /> */}
       </section>
 
       {/* <section className="photo">
@@ -59,22 +59,22 @@ function Main() {
         <h2 className='trials__title'>Наша электроизмерительная лаборатория
           проводит следующие виды испытаний и измерений:</h2>
         <ul className='trials__list'>
-          <li> Проверка соответсвия смонтированной электроустановки требованиям нормативной и проектной документации (визуальный осмотр электроустановок).</li>
-          <li> Измерение сопротивления заземляющих устройств.</li>
-          <li>Измерение сопротивления цепи между заземлителями и заземляемыми элементами.</li>
-          <li>Измерение сопротивления изоляции обесточенных электрических цепей.</li>
-          <li>Измерение сопротивления петли "Фаза-нуль".</li>
-          <li>Измерение парметров УЗО.</li>
-          <li>Проверка срабатывания автоматических выключателей до 1000В.</li>
-          <li>Проверка на работоспрособность устройств автоматического включения резервного питания (АВР).</li>
-          <li>Испытания силовых трансформаторов напряжением до 10кВ, мощностью до 2500кВА.</li>
-          <li>Испытнаия измерительных трансформаторов напряжением до 10кВ.</li>
-          <li>Испытание повышенным напряжением электрооборудования напряжением до 10кВ.</li>
-          <li>Испытание кабельных линий напряжением до 10кВ.</li>
-          <li>Испытание разрядников напряжением до 10кВ.</li>
-          <li>Испытание силовых конденсаторов.</li>
-          <li>Испытание изоляторов, линейной арматуры и других элементов линий электропередачи  и подстанций, напряжение до 110кВт.</li>
-          <li>Оценка качества трансформаторного масла.</li>
+          <li className='trials__list-element'> Проверка соответсвия смонтированной электроустановки требованиям нормативной и проектной документации (визуальный осмотр электроустановок).</li>
+          <li className='trials__list-element'> Измерение сопротивления заземляющих устройств.</li>
+          <li className='trials__list-element'>Измерение сопротивления цепи между заземлителями и заземляемыми элементами.</li>
+          <li className='trials__list-element'>Измерение сопротивления изоляции обесточенных электрических цепей.</li>
+          <li className='trials__list-element'>Измерение сопротивления петли "Фаза-нуль".</li>
+          <li className='trials__list-element'>Измерение парметров УЗО.</li>
+          <li className='trials__list-element'>Проверка срабатывания автоматических выключателей до 1000В.</li>
+          <li className='trials__list-element'>Проверка на работоспрособность устройств автоматического включения резервного питания (АВР).</li>
+          <li className='trials__list-element'>Испытания силовых трансформаторов напряжением до 10кВ, мощностью до 2500кВА.</li>
+          <li className='trials__list-element'>Испытнаия измерительных трансформаторов напряжением до 10кВ.</li>
+          <li className='trials__list-element'>Испытание повышенным напряжением электрооборудования напряжением до 10кВ.</li>
+          <li className='trials__list-element'>Испытание кабельных линий напряжением до 10кВ.</li>
+          <li className='trials__list-element'>Испытание разрядников напряжением до 10кВ.</li>
+          <li className='trials__list-element'>Испытание силовых конденсаторов.</li>
+          <li className='trials__list-element'>Испытание изоляторов, линейной арматуры и других элементов линий электропередачи  и подстанций, напряжение до 110кВт.</li>
+          <li className='trials__list-element'>Оценка качества трансформаторного масла.</li>
         </ul>
       </section>
 
@@ -82,24 +82,24 @@ function Main() {
         <p className='documents__heading'>технический отчёт по испытаниям электрических сетей и заземляющих устройств включает в себя следующие документы:</p>
         <ul className='documents__list'>
           <li className='documents__list-element'>
-            <p className='documents__list-element-number'>1</p>
-            <p>Копию подтверждения регистрации электроизмерительной лаборатории.</p>
+            <p className='documents__list-number'>1</p>
+            <p className='documents__list-text'>Копию подтверждения регистрации электроизмерительной лаборатории.</p>
           </li>
           <li className='documents__list-element'>
-            <p className='documents__list-element-number'>2</p>
-            <p>Пояснительную записку к протоколам испытаний и измерений.</p>
+            <p className='documents__list-number'>2</p>
+            <p className='documents__list-text'>Пояснительную записку к протоколам испытаний и измерений.</p>
           </li>
           <li className='documents__list-element'>
-            <p className='documents__list-element-number'>3</p>
-            <p>Акт визуального осмотра электроустановки на соответствие нормам и правилам.</p>
+            <p className='documents__list-number'>3</p>
+            <p className='documents__list-text'>Акт визуального осмотра электроустановки на соответствие нормам и правилам.</p>
           </li>
           <li className='documents__list-element'>
-            <p className='documents__list-element-number'>4</p>
-            <p>Протоколы проведённых испытаний и измерений.</p>
+            <p className='documents__list-number'>4</p>
+            <p className='documents__list-text'>Протоколы проведённых испытаний и измерений.</p>
           </li>
           <li className='documents__list-element'>
-            <p className='documents__list-element-number'>5</p>
-            <p>Заключение.</p>
+            <p className='documents__list-number'>5</p>
+            <p className='documents__list-text'>Заключение.</p>
           </li>
         </ul>
 

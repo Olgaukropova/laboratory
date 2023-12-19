@@ -1,17 +1,19 @@
 .heading {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* background-color: gray; */
+
   background-image: url(../images/es-transmission-tower.jpg);
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  background-color: #181d34;
+  background-position: center;
+  background-size: cover;
+  /* background: linear-gradient(to right,#1e2b4d, black);; */
   padding-top: 40px;
   padding-bottom: 40px;
   color: #FFF;
-
+  min-height: 450px;
+  /* #1e2b4d */
+  /* #181d34*/
 }
 
 .heading__name {
@@ -28,8 +30,9 @@
   font-size: 38px;
   font-style: normal;
   text-transform: uppercase;
-  margin-top: 45px;
-  margin-left: 430px;
+  padding-top: 150px;
+  padding-left: 550px;
+  color: #FFB342;
 }
 
 .heading__subtitle {
@@ -38,7 +41,8 @@
   font-size: 20px;
   font-style: normal;
   text-transform: uppercase;
-  margin-left: 504px;
+  padding-left: 550px;
+  padding-top: 100px;
 }
 
 .heading__text {
@@ -46,7 +50,8 @@
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
-  margin-left: 554px;
+  padding-left: 550px;
+  padding-top: 50px;
 }
 
 
@@ -120,17 +125,37 @@
   align-items: flex-start;
   color: #FFF;
   font-size: 23px;
-  list-style: none;
-  list-style-image: url(../images/IMAGE.svg);
+  /* list-style: none; */
+  /* list-style-image: url(../images/IMAGE.svg); */
   margin-bottom: 80px;
+  position: relative;
 }
+
+.trials__list-element {
+  text-align: left;
+}
+
+
+
+/* .trials__list-elemen::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 11px;
+	display: block;
+  background-image: url("../images/mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFB342;
+  padding: 5px;
+} */
 
 .certificate {
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
- background-color: #F4F4F4;
+  background-color: #F4F4F4;
 }
 
 .certificate__image {
@@ -167,7 +192,7 @@
   align-items: center;
 }
 
-.documents__list-element-number {
+.documents__list-number {
   background-color: #1C2752;
   color: #FFB342;
   border-radius: 50%;
@@ -176,21 +201,21 @@
   font-size: 35px;
 }
 
-.contacts{
-display: flex;
-background-color:#181d34;
-color: #FFF;
-align-items: center;
+.contacts {
+  display: flex;
+  background-color: #181d34;
+  color: #FFF;
+  align-items: center;
 }
 
 .contacts__info {
- font-size: 18px;
-  
+  font-size: 18px;
+
   align-items: center;
 }
 
 
-.contacts__name{
+.contacts__name {
   font-style: oblique;
   font-size: 30px;
   font-weight: 600;
@@ -198,22 +223,228 @@ align-items: center;
   text-align: center;
   margin-left: 30px;
 }
-.contacts__img{
-border-radius: 50%;
-background-color: #FFB342;
-width: 28px;
-height: 28px;
-padding: 10px;
-margin-right: 10px;
+
+.contacts__img {
+  border-radius: 50%;
+  background-color: #FFB342;
+  width: 28px;
+  height: 28px;
+  padding: 10px;
+  margin-right: 10px;
 }
 
-.contacts__block{
+.contacts__block {
   display: flex;
-align-items: center;
-margin-right: 50px;
+  align-items: center;
+  margin-right: 50px;
 }
 
-.contacts__blocks{
+.contacts__blocks {
   margin-left: 80px;
   display: flex;
+}
+
+@media (max-width: 1250px) {
+
+  .heading__title {
+    font-size: 30px;
+  }
+
+  .heading__subtitle {
+    font-size: 17px;
+    padding-left: 500px;
+  }
+
+  .heading__text {
+    font-size: 15px;
+  }
+
+  .contacts__name {
+    font-size: 28px;
+  }
+
+  .contacts__info {
+    font-size: 15px;
+  }
+
+  .contacts__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .contacts__blocks {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .heading__title {
+    padding-left: 350px;
+  }
+
+  .heading__subtitle {
+    padding-left: 350px;
+    padding-top: 50px;
+  }
+
+  .heading__text {
+    padding-left: 400px;
+    padding-top: 20px;
+  }
+
+  .contacts__name {
+    font-size: 20px;
+  }
+
+  .contacts__info {
+    font-size: 12px;
+  }
+
+  .contacts__img {
+    padding: 5px;
+  }
+
+  .contacts__block {
+    margin-right: 30px;
+  }
+
+  .trials {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .trials__list {
+    font-size: 19px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .heading__title {
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 25px;
+  }
+
+  .heading__subtitle {
+    padding-left: 175px;
+    font-size: 15px;
+  }
+
+  .heading__text {
+    padding-left: 210px;
+    font-size: 12px;
+
+  }
+
+  .documents__list-text {
+    font-size: 12px;
+  }
+
+  .documents__list-number {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__block {
+    flex-direction: column;
+  }
+
+
+
+  .trials__title {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    max-width: 900px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .services__elemen-problem {
+    grid-column: 1/ 1;
+  }
+
+  .documents__list {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .documents__list-element {
+    margin: auto;
+  }
+
+  .heading__title {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+
+  .heading__subtitle {
+    padding-left: 115px;
+  }
+
+  .heading__text {
+    padding-left: 120px;
+  }
+
+  .documents__heading {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+
+  .header__list_element {
+    display: none;
+  }
+
+  .header__list_element-contacts {
+    display: block;
+    padding: 10px;
+  }
+
+  .trials__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .trials {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .trials__list-element {
+    font-size: 15px;
+  }
+  .documents__list-text{
+    font-size: 15px;
+  }
+  
+  .documents__list-number {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .contacts__blocks {
+    flex-direction: column;
+  }
 }

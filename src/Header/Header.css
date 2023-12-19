@@ -14,6 +14,7 @@
   margin-left: 30px;
 }
 
+
 .header__list {
   margin: 0;
   list-style: none;
@@ -31,9 +32,74 @@
   color: #1C2752;
 }
 
+.header__list_element:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
 .header__list_element-contacts {
   background-color: #1C2752;
   padding: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.header__list_element-contacts:hover {
+  cursor: pointer;
+  background-color: #344997;
+}
+
+
+@media (max-width: 1250px) {
+  .header__name {
+    font-size: 30px;
+  }
+
+  .header__list_element {
+    margin-left: 7px;
+    margin-right: 7px;
+
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .header__name {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .header__list_element {
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+  .header__list {
+    
+    padding: 5px;
+    font-size: 16px;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__name {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header__list_element {
+    font-size: 12px;
+  }
+
+  .header__nav{
+    align-self: end;
+  }
 }

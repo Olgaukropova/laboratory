@@ -6,7 +6,7 @@ function Header() {
   return (
     <section className="header">
       <p className="header__name">Электросетьстрой</p>
-      <nav >
+      <nav className='header__nav'>
         <ul className='header__list'>
           <li className='header__list_element'>
             <a href="#heading" className='header__list_element'>О компании</a>
