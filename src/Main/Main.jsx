@@ -116,7 +116,7 @@ function Main() {
         <div className='contacts__blocks'>
           <div className='contacts__block'>
             <img src={location} alt="локация" className='contacts__img' />
-            <p className='contacts__info'>г.Рязань, <br></br> ул. Прижелезнодорожная,<br></br> 6А</p>
+            <p className='contacts__info'>г. Рязань, <br></br> ул. Прижелезнодорожная,<br></br> 6А</p>
 
           </div>
           <div className='contacts__block'>
